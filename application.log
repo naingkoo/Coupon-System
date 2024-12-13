@@ -1,0 +1,572 @@
+2024-12-13T10:58:06.486+06:30  INFO 3228 --- [coupon_sale_system] [main] com.coupon.CouponSaleSystemApplication   : Starting CouponSaleSystemApplication using Java 17.0.12 with PID 3228 (C:\Users\naing\Desktop\coupon_sale_system_1733516015\Spring Boot\coupon_sale_system\target\classes started by naing in C:\Users\naing\Desktop\coupon_sale_system_1733516015\Spring Boot\coupon_sale_system)
+2024-12-13T10:58:06.509+06:30  INFO 3228 --- [coupon_sale_system] [main] com.coupon.CouponSaleSystemApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-12-13T10:58:09.382+06:30  INFO 3228 --- [coupon_sale_system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13T10:58:09.578+06:30  INFO 3228 --- [coupon_sale_system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 171 ms. Found 1 JPA repository interface.
+2024-12-13T10:58:12.469+06:30  INFO 3228 --- [coupon_sale_system] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-13T10:58:12.560+06:30  INFO 3228 --- [coupon_sale_system] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-13T10:58:12.575+06:30  INFO 3228 --- [coupon_sale_system] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-13T10:58:12.788+06:30  INFO 3228 --- [coupon_sale_system] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-13T10:58:12.788+06:30  INFO 3228 --- [coupon_sale_system] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6087 ms
+2024-12-13T10:58:13.562+06:30  INFO 3228 --- [coupon_sale_system] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13T10:58:13.778+06:30  INFO 3228 --- [coupon_sale_system] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-13T10:58:13.879+06:30  INFO 3228 --- [coupon_sale_system] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-13T10:58:14.615+06:30  INFO 3228 --- [coupon_sale_system] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13T10:58:14.702+06:30  INFO 3228 --- [coupon_sale_system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-13T10:58:15.485+06:30  INFO 3228 --- [coupon_sale_system] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@74bbc273
+2024-12-13T10:58:15.485+06:30  INFO 3228 --- [coupon_sale_system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-13T10:58:15.669+06:30  INFO 3228 --- [coupon_sale_system] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-13T10:58:17.624+06:30  INFO 3228 --- [coupon_sale_system] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13T10:58:18.062+06:30  INFO 3228 --- [coupon_sale_system] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T10:58:18.781+06:30  INFO 3228 --- [coupon_sale_system] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myuserDetailService
+2024-12-13T10:58:18.819+06:30  WARN 3228 --- [coupon_sale_system] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13T10:58:19.899+06:30  INFO 3228 --- [coupon_sale_system] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-13T10:58:19.915+06:30  INFO 3228 --- [coupon_sale_system] [main] com.coupon.CouponSaleSystemApplication   : Started CouponSaleSystemApplication in 14.687 seconds (process running for 15.835)
+2024-12-13T10:58:37.495+06:30  INFO 3228 --- [coupon_sale_system] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-13T10:58:37.495+06:30  INFO 3228 --- [coupon_sale_system] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-13T10:58:37.495+06:30  INFO 3228 --- [coupon_sale_system] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-12-13T11:08:33.455+06:30 ERROR 3228 --- [coupon_sale_system] [http-nio-8080-exec-9] c.c.A.s.AuthExceptionHandler             : Unauthorized Full authentication is required to access this resource
+2024-12-13T11:22:56.247+06:30  INFO 3228 --- [coupon_sale_system] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-13T11:22:56.649+06:30  INFO 3228 --- [coupon_sale_system] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-13T11:22:56.662+06:30  INFO 3228 --- [coupon_sale_system] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T11:22:56.666+06:30  INFO 3228 --- [coupon_sale_system] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-13T11:22:56.681+06:30  INFO 3228 --- [coupon_sale_system] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-13T11:23:02.716+06:30  INFO 13060 --- [coupon_sale_system] [main] com.coupon.CouponSaleSystemApplication   : Starting CouponSaleSystemApplication using Java 17.0.12 with PID 13060 (C:\Users\naing\Desktop\coupon_sale_system_1733516015\Spring Boot\coupon_sale_system\target\classes started by naing in C:\Users\naing\Desktop\coupon_sale_system_1733516015\Spring Boot\coupon_sale_system)
+2024-12-13T11:23:02.731+06:30  INFO 13060 --- [coupon_sale_system] [main] com.coupon.CouponSaleSystemApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-12-13T11:23:04.000+06:30  INFO 13060 --- [coupon_sale_system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13T11:23:04.143+06:30  INFO 13060 --- [coupon_sale_system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 105 ms. Found 1 JPA repository interface.
+2024-12-13T11:23:05.252+06:30  INFO 13060 --- [coupon_sale_system] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-13T11:23:05.278+06:30  INFO 13060 --- [coupon_sale_system] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-13T11:23:05.278+06:30  INFO 13060 --- [coupon_sale_system] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-13T11:23:05.381+06:30  INFO 13060 --- [coupon_sale_system] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-13T11:23:05.381+06:30  INFO 13060 --- [coupon_sale_system] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2552 ms
+2024-12-13T11:23:05.680+06:30  INFO 13060 --- [coupon_sale_system] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13T11:23:05.775+06:30  INFO 13060 --- [coupon_sale_system] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-13T11:23:05.840+06:30  INFO 13060 --- [coupon_sale_system] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-13T11:23:06.331+06:30  INFO 13060 --- [coupon_sale_system] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13T11:23:06.382+06:30  INFO 13060 --- [coupon_sale_system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-13T11:23:06.998+06:30  INFO 13060 --- [coupon_sale_system] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5a82bc58
+2024-12-13T11:23:07.002+06:30  INFO 13060 --- [coupon_sale_system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-13T11:23:07.193+06:30  INFO 13060 --- [coupon_sale_system] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-13T11:23:08.880+06:30  INFO 13060 --- [coupon_sale_system] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13T11:23:09.268+06:30  INFO 13060 --- [coupon_sale_system] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T11:23:09.873+06:30  INFO 13060 --- [coupon_sale_system] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myuserDetailService
+2024-12-13T11:23:09.924+06:30  WARN 13060 --- [coupon_sale_system] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13T11:23:10.837+06:30  INFO 13060 --- [coupon_sale_system] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-13T11:23:10.853+06:30  INFO 13060 --- [coupon_sale_system] [main] com.coupon.CouponSaleSystemApplication   : Started CouponSaleSystemApplication in 9.042 seconds (process running for 9.8)
+2024-12-13T11:23:16.273+06:30  INFO 13060 --- [coupon_sale_system] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-13T11:23:16.273+06:30  INFO 13060 --- [coupon_sale_system] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-13T11:23:16.275+06:30  INFO 13060 --- [coupon_sale_system] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-12-13T11:23:16.335+06:30 ERROR 13060 --- [coupon_sale_system] [http-nio-8080-exec-2] c.c.A.s.AuthExceptionHandler             : Unauthorized Full authentication is required to access this resource
+2024-12-13T11:25:10.163+06:30  INFO 13060 --- [coupon_sale_system] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-13T11:25:10.596+06:30  INFO 13060 --- [coupon_sale_system] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-13T11:25:10.600+06:30  INFO 13060 --- [coupon_sale_system] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T11:25:10.600+06:30  INFO 13060 --- [coupon_sale_system] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-13T11:25:10.614+06:30  INFO 13060 --- [coupon_sale_system] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-13T11:25:15.669+06:30  INFO 14412 --- [coupon_sale_system] [main] com.coupon.CouponSaleSystemApplication   : Starting CouponSaleSystemApplication using Java 17.0.12 with PID 14412 (C:\Users\naing\Desktop\coupon_sale_system_1733516015\Spring Boot\coupon_sale_system\target\classes started by naing in C:\Users\naing\Desktop\coupon_sale_system_1733516015\Spring Boot\coupon_sale_system)
+2024-12-13T11:25:15.676+06:30  INFO 14412 --- [coupon_sale_system] [main] com.coupon.CouponSaleSystemApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-12-13T11:25:17.001+06:30  INFO 14412 --- [coupon_sale_system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13T11:25:17.155+06:30  INFO 14412 --- [coupon_sale_system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 125 ms. Found 1 JPA repository interface.
+2024-12-13T11:25:18.157+06:30  INFO 14412 --- [coupon_sale_system] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-13T11:25:18.178+06:30  INFO 14412 --- [coupon_sale_system] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-13T11:25:18.178+06:30  INFO 14412 --- [coupon_sale_system] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-13T11:25:18.275+06:30  INFO 14412 --- [coupon_sale_system] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-13T11:25:18.275+06:30  INFO 14412 --- [coupon_sale_system] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2492 ms
+2024-12-13T11:25:18.592+06:30  INFO 14412 --- [coupon_sale_system] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13T11:25:18.691+06:30  INFO 14412 --- [coupon_sale_system] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-13T11:25:18.757+06:30  INFO 14412 --- [coupon_sale_system] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-13T11:25:19.279+06:30  INFO 14412 --- [coupon_sale_system] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13T11:25:19.330+06:30  INFO 14412 --- [coupon_sale_system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-13T11:25:19.869+06:30  INFO 14412 --- [coupon_sale_system] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@15f519f7
+2024-12-13T11:25:19.871+06:30  INFO 14412 --- [coupon_sale_system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-13T11:25:20.035+06:30  INFO 14412 --- [coupon_sale_system] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-13T11:25:21.930+06:30  INFO 14412 --- [coupon_sale_system] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13T11:25:22.347+06:30  INFO 14412 --- [coupon_sale_system] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T11:25:23.080+06:30  INFO 14412 --- [coupon_sale_system] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myuserDetailService
+2024-12-13T11:25:23.128+06:30  WARN 14412 --- [coupon_sale_system] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13T11:25:24.016+06:30  INFO 14412 --- [coupon_sale_system] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-13T11:25:24.032+06:30  INFO 14412 --- [coupon_sale_system] [main] com.coupon.CouponSaleSystemApplication   : Started CouponSaleSystemApplication in 9.223 seconds (process running for 9.945)
+2024-12-13T11:25:28.426+06:30  INFO 14412 --- [coupon_sale_system] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-13T11:25:28.426+06:30  INFO 14412 --- [coupon_sale_system] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-13T11:25:28.436+06:30  INFO 14412 --- [coupon_sale_system] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2024-12-13T11:25:48.140+06:30 ERROR 14412 --- [coupon_sale_system] [http-nio-8080-exec-4] c.c.A.s.AuthExceptionHandler             : Unauthorized Full authentication is required to access this resource
+2024-12-13T11:27:14.318+06:30  INFO 14412 --- [coupon_sale_system] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-13T11:27:14.733+06:30  INFO 14412 --- [coupon_sale_system] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-13T11:27:14.737+06:30  INFO 14412 --- [coupon_sale_system] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T11:27:14.741+06:30  INFO 14412 --- [coupon_sale_system] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-13T11:27:14.757+06:30  INFO 14412 --- [coupon_sale_system] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-13T11:27:20.199+06:30  INFO 2876 --- [coupon_sale_system] [main] com.coupon.CouponSaleSystemApplication   : Starting CouponSaleSystemApplication using Java 17.0.12 with PID 2876 (C:\Users\naing\Desktop\coupon_sale_system_1733516015\Spring Boot\coupon_sale_system\target\classes started by naing in C:\Users\naing\Desktop\coupon_sale_system_1733516015\Spring Boot\coupon_sale_system)
+2024-12-13T11:27:20.215+06:30  INFO 2876 --- [coupon_sale_system] [main] com.coupon.CouponSaleSystemApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-12-13T11:27:21.701+06:30  INFO 2876 --- [coupon_sale_system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13T11:27:21.856+06:30  INFO 2876 --- [coupon_sale_system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 127 ms. Found 1 JPA repository interface.
+2024-12-13T11:27:23.074+06:30  INFO 2876 --- [coupon_sale_system] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-13T11:27:23.089+06:30  INFO 2876 --- [coupon_sale_system] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-13T11:27:23.089+06:30  INFO 2876 --- [coupon_sale_system] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-13T11:27:23.327+06:30  INFO 2876 --- [coupon_sale_system] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-13T11:27:23.328+06:30  INFO 2876 --- [coupon_sale_system] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2992 ms
+2024-12-13T11:27:23.669+06:30  INFO 2876 --- [coupon_sale_system] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13T11:27:23.786+06:30  INFO 2876 --- [coupon_sale_system] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-13T11:27:23.851+06:30  INFO 2876 --- [coupon_sale_system] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-13T11:27:24.478+06:30  INFO 2876 --- [coupon_sale_system] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13T11:27:24.544+06:30  INFO 2876 --- [coupon_sale_system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-13T11:27:25.148+06:30  INFO 2876 --- [coupon_sale_system] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@52657d5f
+2024-12-13T11:27:25.153+06:30  INFO 2876 --- [coupon_sale_system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-13T11:27:25.343+06:30  INFO 2876 --- [coupon_sale_system] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-13T11:27:27.889+06:30  INFO 2876 --- [coupon_sale_system] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13T11:27:28.608+06:30  INFO 2876 --- [coupon_sale_system] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T11:27:29.808+06:30  INFO 2876 --- [coupon_sale_system] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myuserDetailService
+2024-12-13T11:27:29.895+06:30  WARN 2876 --- [coupon_sale_system] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13T11:27:31.202+06:30  INFO 2876 --- [coupon_sale_system] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-13T11:27:31.233+06:30  INFO 2876 --- [coupon_sale_system] [main] com.coupon.CouponSaleSystemApplication   : Started CouponSaleSystemApplication in 12.011 seconds (process running for 12.873)
+2024-12-13T11:27:34.028+06:30  INFO 2876 --- [coupon_sale_system] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-13T11:27:34.028+06:30  INFO 2876 --- [coupon_sale_system] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-13T11:27:34.033+06:30  INFO 2876 --- [coupon_sale_system] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2024-12-13T11:29:52.562+06:30  INFO 2876 --- [coupon_sale_system] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-13T11:29:52.906+06:30  INFO 2876 --- [coupon_sale_system] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-13T11:29:52.913+06:30  INFO 2876 --- [coupon_sale_system] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T11:29:52.913+06:30  INFO 2876 --- [coupon_sale_system] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-13T11:29:52.932+06:30  INFO 2876 --- [coupon_sale_system] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-13T11:29:58.345+06:30  INFO 8204 --- [coupon_sale_system] [main] com.coupon.CouponSaleSystemApplication   : Starting CouponSaleSystemApplication using Java 17.0.12 with PID 8204 (C:\Users\naing\Desktop\coupon_sale_system_1733516015\Spring Boot\coupon_sale_system\target\classes started by naing in C:\Users\naing\Desktop\coupon_sale_system_1733516015\Spring Boot\coupon_sale_system)
+2024-12-13T11:29:58.351+06:30  INFO 8204 --- [coupon_sale_system] [main] com.coupon.CouponSaleSystemApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-12-13T11:29:59.643+06:30  INFO 8204 --- [coupon_sale_system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13T11:29:59.802+06:30  INFO 8204 --- [coupon_sale_system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 113 ms. Found 1 JPA repository interface.
+2024-12-13T11:30:00.888+06:30  INFO 8204 --- [coupon_sale_system] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-13T11:30:00.914+06:30  INFO 8204 --- [coupon_sale_system] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-13T11:30:00.914+06:30  INFO 8204 --- [coupon_sale_system] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-13T11:30:01.027+06:30  INFO 8204 --- [coupon_sale_system] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-13T11:30:01.027+06:30  INFO 8204 --- [coupon_sale_system] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2573 ms
+2024-12-13T11:30:01.342+06:30  INFO 8204 --- [coupon_sale_system] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13T11:30:01.471+06:30  INFO 8204 --- [coupon_sale_system] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-13T11:30:01.536+06:30  INFO 8204 --- [coupon_sale_system] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-13T11:30:02.135+06:30  INFO 8204 --- [coupon_sale_system] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13T11:30:02.199+06:30  INFO 8204 --- [coupon_sale_system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-13T11:30:02.669+06:30  INFO 8204 --- [coupon_sale_system] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@280ecc33
+2024-12-13T11:30:02.672+06:30  INFO 8204 --- [coupon_sale_system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-13T11:30:02.842+06:30  INFO 8204 --- [coupon_sale_system] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-13T11:30:04.630+06:30  INFO 8204 --- [coupon_sale_system] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13T11:30:04.982+06:30  INFO 8204 --- [coupon_sale_system] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T11:30:05.593+06:30  INFO 8204 --- [coupon_sale_system] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myuserDetailService
+2024-12-13T11:30:05.634+06:30  WARN 8204 --- [coupon_sale_system] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13T11:30:06.483+06:30  INFO 8204 --- [coupon_sale_system] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-13T11:30:06.498+06:30  INFO 8204 --- [coupon_sale_system] [main] com.coupon.CouponSaleSystemApplication   : Started CouponSaleSystemApplication in 9.026 seconds (process running for 9.752)
+2024-12-13T11:30:16.723+06:30  INFO 8204 --- [coupon_sale_system] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-13T11:30:16.723+06:30  INFO 8204 --- [coupon_sale_system] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-13T11:30:16.729+06:30  INFO 8204 --- [coupon_sale_system] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-12-13T11:32:17.560+06:30  INFO 8204 --- [coupon_sale_system] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-13T11:32:18.006+06:30  INFO 8204 --- [coupon_sale_system] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-13T11:32:18.017+06:30  INFO 8204 --- [coupon_sale_system] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T11:32:18.022+06:30  INFO 8204 --- [coupon_sale_system] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-13T11:32:18.041+06:30  INFO 8204 --- [coupon_sale_system] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-13T11:36:41.029+06:30  INFO 3780 --- [coupon_sale_system] [main] com.coupon.CouponSaleSystemApplication   : Starting CouponSaleSystemApplication using Java 17.0.12 with PID 3780 (C:\Users\naing\Desktop\coupon_sale_system_1733516015\Spring Boot\coupon_sale_system\target\classes started by naing in C:\Users\naing\Desktop\coupon_sale_system_1733516015\Spring Boot\coupon_sale_system)
+2024-12-13T11:36:41.034+06:30  INFO 3780 --- [coupon_sale_system] [main] com.coupon.CouponSaleSystemApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-12-13T11:36:42.435+06:30  INFO 3780 --- [coupon_sale_system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13T11:36:42.578+06:30  INFO 3780 --- [coupon_sale_system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 104 ms. Found 1 JPA repository interface.
+2024-12-13T11:36:43.627+06:30  INFO 3780 --- [coupon_sale_system] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-13T11:36:43.650+06:30  INFO 3780 --- [coupon_sale_system] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-13T11:36:43.654+06:30  INFO 3780 --- [coupon_sale_system] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-13T11:36:43.772+06:30  INFO 3780 --- [coupon_sale_system] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-13T11:36:43.773+06:30  INFO 3780 --- [coupon_sale_system] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2619 ms
+2024-12-13T11:36:44.081+06:30  INFO 3780 --- [coupon_sale_system] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13T11:36:44.166+06:30  INFO 3780 --- [coupon_sale_system] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-13T11:36:44.237+06:30  INFO 3780 --- [coupon_sale_system] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-13T11:36:44.783+06:30  INFO 3780 --- [coupon_sale_system] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13T11:36:44.843+06:30  INFO 3780 --- [coupon_sale_system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-13T11:36:45.389+06:30  INFO 3780 --- [coupon_sale_system] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@43d3995f
+2024-12-13T11:36:45.392+06:30  INFO 3780 --- [coupon_sale_system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-13T11:36:45.537+06:30  INFO 3780 --- [coupon_sale_system] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-13T11:36:47.265+06:30  INFO 3780 --- [coupon_sale_system] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13T11:36:47.602+06:30  INFO 3780 --- [coupon_sale_system] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T11:36:48.145+06:30  INFO 3780 --- [coupon_sale_system] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myuserDetailService
+2024-12-13T11:36:48.193+06:30  WARN 3780 --- [coupon_sale_system] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13T11:36:49.088+06:30  INFO 3780 --- [coupon_sale_system] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-13T11:36:49.108+06:30  INFO 3780 --- [coupon_sale_system] [main] com.coupon.CouponSaleSystemApplication   : Started CouponSaleSystemApplication in 9.023 seconds (process running for 9.742)
+2024-12-13T11:36:55.450+06:30  INFO 3780 --- [coupon_sale_system] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-13T11:36:55.450+06:30  INFO 3780 --- [coupon_sale_system] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-13T11:36:55.456+06:30  INFO 3780 --- [coupon_sale_system] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2024-12-13T11:38:54.910+06:30  INFO 3780 --- [coupon_sale_system] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-13T11:38:55.326+06:30  INFO 3780 --- [coupon_sale_system] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-13T11:38:55.334+06:30  INFO 3780 --- [coupon_sale_system] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T11:38:55.336+06:30  INFO 3780 --- [coupon_sale_system] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-13T11:38:55.353+06:30  INFO 3780 --- [coupon_sale_system] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-13T11:39:01.633+06:30  INFO 2364 --- [coupon_sale_system] [main] com.coupon.CouponSaleSystemApplication   : Starting CouponSaleSystemApplication using Java 17.0.12 with PID 2364 (C:\Users\naing\Desktop\coupon_sale_system_1733516015\Spring Boot\coupon_sale_system\target\classes started by naing in C:\Users\naing\Desktop\coupon_sale_system_1733516015\Spring Boot\coupon_sale_system)
+2024-12-13T11:39:01.643+06:30  INFO 2364 --- [coupon_sale_system] [main] com.coupon.CouponSaleSystemApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-12-13T11:39:03.320+06:30  INFO 2364 --- [coupon_sale_system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13T11:39:03.476+06:30  INFO 2364 --- [coupon_sale_system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 120 ms. Found 1 JPA repository interface.
+2024-12-13T11:39:04.882+06:30  INFO 2364 --- [coupon_sale_system] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-13T11:39:04.912+06:30  INFO 2364 --- [coupon_sale_system] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-13T11:39:04.913+06:30  INFO 2364 --- [coupon_sale_system] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-13T11:39:05.075+06:30  INFO 2364 --- [coupon_sale_system] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-13T11:39:05.077+06:30  INFO 2364 --- [coupon_sale_system] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3296 ms
+2024-12-13T11:39:05.460+06:30  INFO 2364 --- [coupon_sale_system] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13T11:39:05.583+06:30  INFO 2364 --- [coupon_sale_system] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-13T11:39:05.661+06:30  INFO 2364 --- [coupon_sale_system] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-13T11:39:06.310+06:30  INFO 2364 --- [coupon_sale_system] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13T11:39:06.375+06:30  INFO 2364 --- [coupon_sale_system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-13T11:39:06.986+06:30  INFO 2364 --- [coupon_sale_system] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@46524ebe
+2024-12-13T11:39:06.992+06:30  INFO 2364 --- [coupon_sale_system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-13T11:39:07.155+06:30  INFO 2364 --- [coupon_sale_system] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-13T11:39:09.240+06:30  INFO 2364 --- [coupon_sale_system] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13T11:39:09.576+06:30  INFO 2364 --- [coupon_sale_system] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T11:39:10.380+06:30  INFO 2364 --- [coupon_sale_system] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myuserDetailService
+2024-12-13T11:39:10.447+06:30  WARN 2364 --- [coupon_sale_system] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13T11:39:11.636+06:30  INFO 2364 --- [coupon_sale_system] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-13T11:39:11.662+06:30  INFO 2364 --- [coupon_sale_system] [main] com.coupon.CouponSaleSystemApplication   : Started CouponSaleSystemApplication in 11.154 seconds (process running for 12.126)
+2024-12-13T11:39:17.763+06:30  INFO 2364 --- [coupon_sale_system] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-13T11:39:17.763+06:30  INFO 2364 --- [coupon_sale_system] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-13T11:39:17.763+06:30  INFO 2364 --- [coupon_sale_system] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-12-13T11:42:42.556+06:30 ERROR 2364 --- [coupon_sale_system] [http-nio-8080-exec-6] c.c.A.s.AuthExceptionHandler             : Unauthorized Full authentication is required to access this resource
+2024-12-13T11:43:02.238+06:30 ERROR 2364 --- [coupon_sale_system] [http-nio-8080-exec-8] c.c.A.s.AuthExceptionHandler             : Unauthorized Full authentication is required to access this resource
+2024-12-13T13:46:05.588+06:30  WARN 2364 --- [coupon_sale_system] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h59m32s701ms335µs600ns).
+2024-12-13T13:58:25.313+06:30  INFO 2364 --- [coupon_sale_system] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-13T13:58:25.488+06:30  INFO 2364 --- [coupon_sale_system] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-13T13:58:25.497+06:30  INFO 2364 --- [coupon_sale_system] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T13:58:25.502+06:30  INFO 2364 --- [coupon_sale_system] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-13T13:58:25.509+06:30  INFO 2364 --- [coupon_sale_system] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-13T14:00:48.507+06:30  INFO 7672 --- [coupon_sale_system] [main] com.coupon.CouponSaleSystemApplication   : Starting CouponSaleSystemApplication using Java 17.0.12 with PID 7672 (C:\Users\naing\Desktop\coupon_sale_system_1733516015\Spring Boot\coupon_sale_system\target\classes started by naing in C:\Users\naing\Desktop\coupon_sale_system_1733516015\Spring Boot\coupon_sale_system)
+2024-12-13T14:00:48.510+06:30  INFO 7672 --- [coupon_sale_system] [main] com.coupon.CouponSaleSystemApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-12-13T14:00:49.420+06:30  INFO 7672 --- [coupon_sale_system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13T14:00:49.513+06:30  INFO 7672 --- [coupon_sale_system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 1 JPA repository interface.
+2024-12-13T14:00:50.179+06:30  INFO 7672 --- [coupon_sale_system] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-13T14:00:50.185+06:30  INFO 7672 --- [coupon_sale_system] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-13T14:00:50.185+06:30  INFO 7672 --- [coupon_sale_system] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-13T14:00:50.258+06:30  INFO 7672 --- [coupon_sale_system] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-13T14:00:50.258+06:30  INFO 7672 --- [coupon_sale_system] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1680 ms
+2024-12-13T14:00:50.467+06:30  INFO 7672 --- [coupon_sale_system] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13T14:00:50.545+06:30  INFO 7672 --- [coupon_sale_system] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-13T14:00:50.583+06:30  INFO 7672 --- [coupon_sale_system] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-13T14:00:50.901+06:30  INFO 7672 --- [coupon_sale_system] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13T14:00:50.939+06:30  INFO 7672 --- [coupon_sale_system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-13T14:00:51.273+06:30  INFO 7672 --- [coupon_sale_system] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1de85972
+2024-12-13T14:00:51.288+06:30  INFO 7672 --- [coupon_sale_system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-13T14:00:51.380+06:30  INFO 7672 --- [coupon_sale_system] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-13T14:00:52.445+06:30  INFO 7672 --- [coupon_sale_system] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13T14:00:52.636+06:30  INFO 7672 --- [coupon_sale_system] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T14:00:52.979+06:30  INFO 7672 --- [coupon_sale_system] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myuserDetailService
+2024-12-13T14:00:53.006+06:30  WARN 7672 --- [coupon_sale_system] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13T14:00:54.012+06:30  INFO 7672 --- [coupon_sale_system] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-13T14:00:54.036+06:30  INFO 7672 --- [coupon_sale_system] [main] com.coupon.CouponSaleSystemApplication   : Started CouponSaleSystemApplication in 6.231 seconds (process running for 6.748)
+2024-12-13T14:01:00.979+06:30  INFO 7672 --- [coupon_sale_system] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-13T14:01:00.979+06:30  INFO 7672 --- [coupon_sale_system] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-13T14:01:00.981+06:30  INFO 7672 --- [coupon_sale_system] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-12-13T14:01:01.919+06:30 ERROR 7672 --- [coupon_sale_system] [http-nio-8080-exec-1] c.c.A.s.AuthExceptionHandler             : Unauthorized Bad credentials
+2024-12-13T14:02:18.409+06:30  INFO 7672 --- [coupon_sale_system] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-13T14:02:18.584+06:30  INFO 7672 --- [coupon_sale_system] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-13T14:02:18.588+06:30  INFO 7672 --- [coupon_sale_system] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T14:02:18.590+06:30  INFO 7672 --- [coupon_sale_system] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-13T14:02:18.596+06:30  INFO 7672 --- [coupon_sale_system] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-13T14:02:21.844+06:30  INFO 15752 --- [coupon_sale_system] [main] com.coupon.CouponSaleSystemApplication   : Starting CouponSaleSystemApplication using Java 17.0.12 with PID 15752 (C:\Users\naing\Desktop\coupon_sale_system_1733516015\Spring Boot\coupon_sale_system\target\classes started by naing in C:\Users\naing\Desktop\coupon_sale_system_1733516015\Spring Boot\coupon_sale_system)
+2024-12-13T14:02:21.848+06:30  INFO 15752 --- [coupon_sale_system] [main] com.coupon.CouponSaleSystemApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-12-13T14:02:22.670+06:30  INFO 15752 --- [coupon_sale_system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13T14:02:22.754+06:30  INFO 15752 --- [coupon_sale_system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 1 JPA repository interface.
+2024-12-13T14:02:23.409+06:30  INFO 15752 --- [coupon_sale_system] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-13T14:02:23.421+06:30  INFO 15752 --- [coupon_sale_system] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-13T14:02:23.421+06:30  INFO 15752 --- [coupon_sale_system] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-13T14:02:23.484+06:30  INFO 15752 --- [coupon_sale_system] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-13T14:02:23.485+06:30  INFO 15752 --- [coupon_sale_system] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1568 ms
+2024-12-13T14:02:23.677+06:30  INFO 15752 --- [coupon_sale_system] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13T14:02:23.737+06:30  INFO 15752 --- [coupon_sale_system] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-13T14:02:23.771+06:30  INFO 15752 --- [coupon_sale_system] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-13T14:02:24.053+06:30  INFO 15752 --- [coupon_sale_system] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13T14:02:24.086+06:30  INFO 15752 --- [coupon_sale_system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-13T14:02:24.348+06:30  INFO 15752 --- [coupon_sale_system] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@28fa541
+2024-12-13T14:02:24.349+06:30  INFO 15752 --- [coupon_sale_system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-13T14:02:24.430+06:30  INFO 15752 --- [coupon_sale_system] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-13T14:02:25.434+06:30  INFO 15752 --- [coupon_sale_system] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13T14:02:25.607+06:30  INFO 15752 --- [coupon_sale_system] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T14:02:25.961+06:30  INFO 15752 --- [coupon_sale_system] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myuserDetailService
+2024-12-13T14:02:25.988+06:30  WARN 15752 --- [coupon_sale_system] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13T14:02:26.522+06:30  INFO 15752 --- [coupon_sale_system] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-13T14:02:26.531+06:30  INFO 15752 --- [coupon_sale_system] [main] com.coupon.CouponSaleSystemApplication   : Started CouponSaleSystemApplication in 5.249 seconds (process running for 5.695)
+2024-12-13T14:02:30.920+06:30  INFO 15752 --- [coupon_sale_system] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-13T14:02:30.920+06:30  INFO 15752 --- [coupon_sale_system] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-13T14:02:30.922+06:30  INFO 15752 --- [coupon_sale_system] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-12-13T14:02:31.824+06:30 ERROR 15752 --- [coupon_sale_system] [http-nio-8080-exec-2] c.c.A.s.AuthExceptionHandler             : Unauthorized Bad credentials
+2024-12-13T14:03:08.867+06:30 ERROR 15752 --- [coupon_sale_system] [http-nio-8080-exec-3] c.c.A.s.AuthExceptionHandler             : Unauthorized Bad credentials
+2024-12-13T14:04:27.258+06:30 ERROR 15752 --- [coupon_sale_system] [http-nio-8080-exec-6] c.c.A.s.AuthExceptionHandler             : Unauthorized Full authentication is required to access this resource
+2024-12-13T14:08:32.660+06:30  INFO 15752 --- [coupon_sale_system] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-13T14:08:32.835+06:30  INFO 15752 --- [coupon_sale_system] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-13T14:08:32.839+06:30  INFO 15752 --- [coupon_sale_system] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T14:08:32.841+06:30  INFO 15752 --- [coupon_sale_system] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-13T14:08:32.848+06:30  INFO 15752 --- [coupon_sale_system] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-13T14:08:36.607+06:30  INFO 3780 --- [coupon_sale_system] [main] com.coupon.CouponSaleSystemApplication   : Starting CouponSaleSystemApplication using Java 17.0.12 with PID 3780 (C:\Users\naing\Desktop\coupon_sale_system_1733516015\Spring Boot\coupon_sale_system\target\classes started by naing in C:\Users\naing\Desktop\coupon_sale_system_1733516015\Spring Boot\coupon_sale_system)
+2024-12-13T14:08:36.612+06:30  INFO 3780 --- [coupon_sale_system] [main] com.coupon.CouponSaleSystemApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-12-13T14:08:37.445+06:30  INFO 3780 --- [coupon_sale_system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13T14:08:37.529+06:30  INFO 3780 --- [coupon_sale_system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63 ms. Found 1 JPA repository interface.
+2024-12-13T14:08:38.163+06:30  INFO 3780 --- [coupon_sale_system] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-13T14:08:38.176+06:30  INFO 3780 --- [coupon_sale_system] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-13T14:08:38.176+06:30  INFO 3780 --- [coupon_sale_system] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-13T14:08:38.242+06:30  INFO 3780 --- [coupon_sale_system] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-13T14:08:38.243+06:30  INFO 3780 --- [coupon_sale_system] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1556 ms
+2024-12-13T14:08:38.429+06:30  INFO 3780 --- [coupon_sale_system] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13T14:08:38.494+06:30  INFO 3780 --- [coupon_sale_system] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-13T14:08:38.529+06:30  INFO 3780 --- [coupon_sale_system] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-13T14:08:38.805+06:30  INFO 3780 --- [coupon_sale_system] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13T14:08:38.839+06:30  INFO 3780 --- [coupon_sale_system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-13T14:08:39.118+06:30  INFO 3780 --- [coupon_sale_system] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@72f3f14c
+2024-12-13T14:08:39.119+06:30  INFO 3780 --- [coupon_sale_system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-13T14:08:39.200+06:30  INFO 3780 --- [coupon_sale_system] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-13T14:08:40.213+06:30  INFO 3780 --- [coupon_sale_system] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13T14:08:40.385+06:30  INFO 3780 --- [coupon_sale_system] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T14:08:40.758+06:30  INFO 3780 --- [coupon_sale_system] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myuserDetailService
+2024-12-13T14:08:40.784+06:30  WARN 3780 --- [coupon_sale_system] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13T14:08:41.334+06:30  INFO 3780 --- [coupon_sale_system] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-13T14:08:41.345+06:30  INFO 3780 --- [coupon_sale_system] [main] com.coupon.CouponSaleSystemApplication   : Started CouponSaleSystemApplication in 5.343 seconds (process running for 5.821)
+2024-12-13T14:08:48.917+06:30  INFO 3780 --- [coupon_sale_system] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-13T14:08:48.917+06:30  INFO 3780 --- [coupon_sale_system] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-13T14:08:48.919+06:30  INFO 3780 --- [coupon_sale_system] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-12-13T14:14:02.571+06:30  INFO 3780 --- [coupon_sale_system] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-13T14:14:02.748+06:30  INFO 3780 --- [coupon_sale_system] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-13T14:14:02.752+06:30  INFO 3780 --- [coupon_sale_system] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T14:14:02.752+06:30  INFO 3780 --- [coupon_sale_system] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-13T14:14:02.761+06:30  INFO 3780 --- [coupon_sale_system] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-13T14:14:05.747+06:30  INFO 9460 --- [coupon_sale_system] [main] com.coupon.CouponSaleSystemApplication   : Starting CouponSaleSystemApplication using Java 17.0.12 with PID 9460 (C:\Users\naing\Desktop\coupon_sale_system_1733516015\Spring Boot\coupon_sale_system\target\classes started by naing in C:\Users\naing\Desktop\coupon_sale_system_1733516015\Spring Boot\coupon_sale_system)
+2024-12-13T14:14:05.752+06:30  INFO 9460 --- [coupon_sale_system] [main] com.coupon.CouponSaleSystemApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-12-13T14:14:06.592+06:30  INFO 9460 --- [coupon_sale_system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13T14:14:06.674+06:30  INFO 9460 --- [coupon_sale_system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 1 JPA repository interface.
+2024-12-13T14:14:07.350+06:30  INFO 9460 --- [coupon_sale_system] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-13T14:14:07.360+06:30  INFO 9460 --- [coupon_sale_system] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-13T14:14:07.360+06:30  INFO 9460 --- [coupon_sale_system] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-13T14:14:07.423+06:30  INFO 9460 --- [coupon_sale_system] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-13T14:14:07.423+06:30  INFO 9460 --- [coupon_sale_system] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1602 ms
+2024-12-13T14:14:07.609+06:30  INFO 9460 --- [coupon_sale_system] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13T14:14:07.664+06:30  INFO 9460 --- [coupon_sale_system] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-13T14:14:07.700+06:30  INFO 9460 --- [coupon_sale_system] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-13T14:14:07.990+06:30  INFO 9460 --- [coupon_sale_system] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13T14:14:08.026+06:30  INFO 9460 --- [coupon_sale_system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-13T14:14:08.286+06:30  INFO 9460 --- [coupon_sale_system] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@58fbcb71
+2024-12-13T14:14:08.286+06:30  INFO 9460 --- [coupon_sale_system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-13T14:14:08.364+06:30  INFO 9460 --- [coupon_sale_system] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-13T14:14:09.319+06:30  INFO 9460 --- [coupon_sale_system] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13T14:14:09.487+06:30  INFO 9460 --- [coupon_sale_system] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T14:14:09.825+06:30  INFO 9460 --- [coupon_sale_system] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myuserDetailService
+2024-12-13T14:14:09.853+06:30  WARN 9460 --- [coupon_sale_system] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13T14:14:10.382+06:30  INFO 9460 --- [coupon_sale_system] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-13T14:14:10.390+06:30  INFO 9460 --- [coupon_sale_system] [main] com.coupon.CouponSaleSystemApplication   : Started CouponSaleSystemApplication in 5.217 seconds (process running for 5.658)
+2024-12-13T14:14:15.567+06:30  INFO 9460 --- [coupon_sale_system] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-13T14:14:15.567+06:30  INFO 9460 --- [coupon_sale_system] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-13T14:14:15.572+06:30  INFO 9460 --- [coupon_sale_system] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2024-12-13T14:16:20.822+06:30  INFO 9460 --- [coupon_sale_system] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-13T14:16:21.166+06:30  INFO 9460 --- [coupon_sale_system] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-13T14:16:21.171+06:30  INFO 9460 --- [coupon_sale_system] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T14:16:21.175+06:30  INFO 9460 --- [coupon_sale_system] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-13T14:16:21.188+06:30  INFO 9460 --- [coupon_sale_system] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-13T14:16:26.466+06:30  INFO 3640 --- [coupon_sale_system] [main] com.coupon.CouponSaleSystemApplication   : Starting CouponSaleSystemApplication using Java 17.0.12 with PID 3640 (C:\Users\naing\Desktop\coupon_sale_system_1733516015\Spring Boot\coupon_sale_system\target\classes started by naing in C:\Users\naing\Desktop\coupon_sale_system_1733516015\Spring Boot\coupon_sale_system)
+2024-12-13T14:16:26.466+06:30  INFO 3640 --- [coupon_sale_system] [main] com.coupon.CouponSaleSystemApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-12-13T14:16:27.883+06:30  INFO 3640 --- [coupon_sale_system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13T14:16:28.022+06:30  INFO 3640 --- [coupon_sale_system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 107 ms. Found 1 JPA repository interface.
+2024-12-13T14:16:29.137+06:30  INFO 3640 --- [coupon_sale_system] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-13T14:16:29.159+06:30  INFO 3640 --- [coupon_sale_system] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-13T14:16:29.159+06:30  INFO 3640 --- [coupon_sale_system] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-13T14:16:29.275+06:30  INFO 3640 --- [coupon_sale_system] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-13T14:16:29.275+06:30  INFO 3640 --- [coupon_sale_system] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2700 ms
+2024-12-13T14:16:29.625+06:30  INFO 3640 --- [coupon_sale_system] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13T14:16:29.725+06:30  INFO 3640 --- [coupon_sale_system] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-13T14:16:29.788+06:30  INFO 3640 --- [coupon_sale_system] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-13T14:16:30.305+06:30  INFO 3640 --- [coupon_sale_system] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13T14:16:30.353+06:30  INFO 3640 --- [coupon_sale_system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-13T14:16:30.886+06:30  INFO 3640 --- [coupon_sale_system] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@43d3995f
+2024-12-13T14:16:30.888+06:30  INFO 3640 --- [coupon_sale_system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-13T14:16:31.124+06:30  INFO 3640 --- [coupon_sale_system] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-13T14:16:32.900+06:30  INFO 3640 --- [coupon_sale_system] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13T14:16:33.166+06:30  INFO 3640 --- [coupon_sale_system] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T14:16:33.743+06:30  INFO 3640 --- [coupon_sale_system] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myuserDetailService
+2024-12-13T14:16:33.781+06:30  WARN 3640 --- [coupon_sale_system] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13T14:16:34.680+06:30  INFO 3640 --- [coupon_sale_system] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-13T14:16:34.702+06:30  INFO 3640 --- [coupon_sale_system] [main] com.coupon.CouponSaleSystemApplication   : Started CouponSaleSystemApplication in 9.143 seconds (process running for 9.91)
+2024-12-13T14:17:22.588+06:30  INFO 3640 --- [coupon_sale_system] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-13T14:17:23.027+06:30  INFO 3640 --- [coupon_sale_system] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-13T14:17:23.032+06:30  INFO 3640 --- [coupon_sale_system] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T14:17:23.041+06:30  INFO 3640 --- [coupon_sale_system] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-13T14:17:23.051+06:30  INFO 3640 --- [coupon_sale_system] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-13T14:17:28.341+06:30  INFO 2556 --- [coupon_sale_system] [main] com.coupon.CouponSaleSystemApplication   : Starting CouponSaleSystemApplication using Java 17.0.12 with PID 2556 (C:\Users\naing\Desktop\coupon_sale_system_1733516015\Spring Boot\coupon_sale_system\target\classes started by naing in C:\Users\naing\Desktop\coupon_sale_system_1733516015\Spring Boot\coupon_sale_system)
+2024-12-13T14:17:28.345+06:30  INFO 2556 --- [coupon_sale_system] [main] com.coupon.CouponSaleSystemApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-12-13T14:17:29.759+06:30  INFO 2556 --- [coupon_sale_system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13T14:17:29.928+06:30  INFO 2556 --- [coupon_sale_system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 133 ms. Found 1 JPA repository interface.
+2024-12-13T14:17:31.272+06:30  INFO 2556 --- [coupon_sale_system] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-13T14:17:31.296+06:30  INFO 2556 --- [coupon_sale_system] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-13T14:17:31.296+06:30  INFO 2556 --- [coupon_sale_system] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-13T14:17:31.396+06:30  INFO 2556 --- [coupon_sale_system] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-13T14:17:31.408+06:30  INFO 2556 --- [coupon_sale_system] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2910 ms
+2024-12-13T14:17:31.768+06:30  INFO 2556 --- [coupon_sale_system] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13T14:17:31.913+06:30  INFO 2556 --- [coupon_sale_system] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-13T14:17:31.993+06:30  INFO 2556 --- [coupon_sale_system] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-13T14:17:32.567+06:30  INFO 2556 --- [coupon_sale_system] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13T14:17:32.678+06:30  INFO 2556 --- [coupon_sale_system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-13T14:17:33.292+06:30  INFO 2556 --- [coupon_sale_system] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5f6a8efe
+2024-12-13T14:17:33.294+06:30  INFO 2556 --- [coupon_sale_system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-13T14:17:33.470+06:30  INFO 2556 --- [coupon_sale_system] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-13T14:17:35.136+06:30  INFO 2556 --- [coupon_sale_system] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13T14:17:35.512+06:30  INFO 2556 --- [coupon_sale_system] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T14:17:36.087+06:30  INFO 2556 --- [coupon_sale_system] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myuserDetailService
+2024-12-13T14:17:36.132+06:30  WARN 2556 --- [coupon_sale_system] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13T14:17:36.991+06:30  INFO 2556 --- [coupon_sale_system] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-13T14:17:37.012+06:30  INFO 2556 --- [coupon_sale_system] [main] com.coupon.CouponSaleSystemApplication   : Started CouponSaleSystemApplication in 9.61 seconds (process running for 10.345)
+2024-12-13T14:18:09.292+06:30  INFO 2556 --- [coupon_sale_system] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-13T14:18:09.292+06:30  INFO 2556 --- [coupon_sale_system] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-13T14:18:09.301+06:30  INFO 2556 --- [coupon_sale_system] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2024-12-13T14:41:09.632+06:30  INFO 2556 --- [coupon_sale_system] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-13T14:41:10.039+06:30  INFO 2556 --- [coupon_sale_system] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-13T14:41:10.052+06:30  INFO 2556 --- [coupon_sale_system] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T14:41:10.054+06:30  INFO 2556 --- [coupon_sale_system] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-13T14:41:10.072+06:30  INFO 2556 --- [coupon_sale_system] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-13T14:41:15.808+06:30  INFO 7772 --- [coupon_sale_system] [main] com.coupon.CouponSaleSystemApplication   : Starting CouponSaleSystemApplication using Java 17.0.12 with PID 7772 (C:\Users\naing\Desktop\coupon_sale_system_1733516015\Spring Boot\coupon_sale_system\target\classes started by naing in C:\Users\naing\Desktop\coupon_sale_system_1733516015\Spring Boot\coupon_sale_system)
+2024-12-13T14:41:15.810+06:30  INFO 7772 --- [coupon_sale_system] [main] com.coupon.CouponSaleSystemApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-12-13T14:41:17.458+06:30  INFO 7772 --- [coupon_sale_system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13T14:41:17.629+06:30  INFO 7772 --- [coupon_sale_system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 128 ms. Found 1 JPA repository interface.
+2024-12-13T14:41:18.879+06:30  INFO 7772 --- [coupon_sale_system] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-13T14:41:18.903+06:30  INFO 7772 --- [coupon_sale_system] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-13T14:41:18.903+06:30  INFO 7772 --- [coupon_sale_system] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-13T14:41:19.004+06:30  INFO 7772 --- [coupon_sale_system] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-13T14:41:19.004+06:30  INFO 7772 --- [coupon_sale_system] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3076 ms
+2024-12-13T14:41:19.354+06:30  INFO 7772 --- [coupon_sale_system] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13T14:41:19.469+06:30  INFO 7772 --- [coupon_sale_system] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-13T14:41:19.544+06:30  INFO 7772 --- [coupon_sale_system] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-13T14:41:20.115+06:30  INFO 7772 --- [coupon_sale_system] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13T14:41:20.192+06:30  INFO 7772 --- [coupon_sale_system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-13T14:41:20.721+06:30  INFO 7772 --- [coupon_sale_system] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6a1d1467
+2024-12-13T14:41:20.726+06:30  INFO 7772 --- [coupon_sale_system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-13T14:41:20.888+06:30  INFO 7772 --- [coupon_sale_system] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-13T14:41:22.816+06:30  INFO 7772 --- [coupon_sale_system] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13T14:41:23.189+06:30  INFO 7772 --- [coupon_sale_system] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T14:41:23.797+06:30  INFO 7772 --- [coupon_sale_system] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myuserDetailService
+2024-12-13T14:41:23.845+06:30  WARN 7772 --- [coupon_sale_system] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13T14:41:24.779+06:30  INFO 7772 --- [coupon_sale_system] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-13T14:41:24.794+06:30  INFO 7772 --- [coupon_sale_system] [main] com.coupon.CouponSaleSystemApplication   : Started CouponSaleSystemApplication in 9.94 seconds (process running for 10.703)
+2024-12-13T14:42:09.074+06:30  INFO 7772 --- [coupon_sale_system] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-13T14:42:09.082+06:30  INFO 7772 --- [coupon_sale_system] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-13T14:42:09.083+06:30  INFO 7772 --- [coupon_sale_system] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-12-13T14:44:05.520+06:30  INFO 7772 --- [coupon_sale_system] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-13T14:44:05.913+06:30  INFO 7772 --- [coupon_sale_system] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-13T14:44:05.919+06:30  INFO 7772 --- [coupon_sale_system] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T14:44:05.919+06:30  INFO 7772 --- [coupon_sale_system] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-13T14:44:05.931+06:30  INFO 7772 --- [coupon_sale_system] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-13T14:44:10.900+06:30  INFO 2860 --- [coupon_sale_system] [main] com.coupon.CouponSaleSystemApplication   : Starting CouponSaleSystemApplication using Java 17.0.12 with PID 2860 (C:\Users\naing\Desktop\coupon_sale_system_1733516015\Spring Boot\coupon_sale_system\target\classes started by naing in C:\Users\naing\Desktop\coupon_sale_system_1733516015\Spring Boot\coupon_sale_system)
+2024-12-13T14:44:10.906+06:30  INFO 2860 --- [coupon_sale_system] [main] com.coupon.CouponSaleSystemApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-12-13T14:44:12.263+06:30  INFO 2860 --- [coupon_sale_system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13T14:44:12.417+06:30  INFO 2860 --- [coupon_sale_system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 117 ms. Found 1 JPA repository interface.
+2024-12-13T14:44:13.495+06:30  INFO 2860 --- [coupon_sale_system] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-13T14:44:13.518+06:30  INFO 2860 --- [coupon_sale_system] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-13T14:44:13.520+06:30  INFO 2860 --- [coupon_sale_system] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-13T14:44:13.641+06:30  INFO 2860 --- [coupon_sale_system] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-13T14:44:13.641+06:30  INFO 2860 --- [coupon_sale_system] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2623 ms
+2024-12-13T14:44:13.957+06:30  INFO 2860 --- [coupon_sale_system] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13T14:44:14.062+06:30  INFO 2860 --- [coupon_sale_system] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-13T14:44:14.120+06:30  INFO 2860 --- [coupon_sale_system] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-13T14:44:14.625+06:30  INFO 2860 --- [coupon_sale_system] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13T14:44:14.673+06:30  INFO 2860 --- [coupon_sale_system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-13T14:44:15.189+06:30  INFO 2860 --- [coupon_sale_system] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@52657d5f
+2024-12-13T14:44:15.189+06:30  INFO 2860 --- [coupon_sale_system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-13T14:44:15.375+06:30  INFO 2860 --- [coupon_sale_system] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-13T14:44:17.130+06:30  INFO 2860 --- [coupon_sale_system] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13T14:44:17.472+06:30  INFO 2860 --- [coupon_sale_system] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T14:44:18.121+06:30  INFO 2860 --- [coupon_sale_system] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myuserDetailService
+2024-12-13T14:44:18.171+06:30  WARN 2860 --- [coupon_sale_system] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13T14:44:19.108+06:30  INFO 2860 --- [coupon_sale_system] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-13T14:44:19.128+06:30  INFO 2860 --- [coupon_sale_system] [main] com.coupon.CouponSaleSystemApplication   : Started CouponSaleSystemApplication in 9.103 seconds (process running for 9.804)
+2024-12-13T14:44:22.694+06:30  INFO 2860 --- [coupon_sale_system] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-13T14:44:22.694+06:30  INFO 2860 --- [coupon_sale_system] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-13T14:44:22.698+06:30  INFO 2860 --- [coupon_sale_system] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
