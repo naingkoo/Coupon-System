@@ -35,7 +35,7 @@ public class AuthenConfig {
         return http
                 .cors(cors-> cors.configurationSource(corsConfigurationSource()))
                 .csrf(AbstractHttpConfigurer::disable)
-//                .exceptionHandling(handle -> handle.authenticationEntryPoint(authExceptionHandler))
+                .exceptionHandling(handle -> handle.authenticationEntryPoint(authExceptionHandler))
                 .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class)
                 .sessionManagement(session-> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(auth-> auth
@@ -54,6 +54,7 @@ public class AuthenConfig {
         configuration.setAllowedHeaders(Arrays.asList("authorization","content-type"));
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         source.registerCorsConfiguration("/**",configuration);
+        configuration.setAllowCredentials(true);
         return source;
     }
 
