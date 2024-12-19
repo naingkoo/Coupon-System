@@ -10,6 +10,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 import java.io.IOException;
+import java.sql.SQLOutput;
 import java.util.List;
 
 @RestController
@@ -47,12 +48,17 @@ public class BusinessController {
             return ResponseEntity.ok(businessdto);
 
         } catch (IOException e) {
+            System.out.println("Here is an error: " + e);
             e.printStackTrace();
+            return null;
+        } catch (Exception ex) {
+            System.out.println("Here is an error: " + ex);
+            ex.printStackTrace();
             return null;
         }
     }
 
-    @GetMapping("/list")
+    @GetMapping("public/list")
     public List<BusinessDTO> getAllBusiness() {
         return Bservice.showAllBusiness();
     }
@@ -71,6 +77,10 @@ public class BusinessController {
         }
     }
 
+    @GetMapping("/test")
+    public String test(){
+        return "hey this is test";
+    }
 
     @PutMapping("/update/{id}")
     public BusinessDTO updatebyId(@PathVariable("id")Integer id,@RequestBody BusinessDTO dto) {

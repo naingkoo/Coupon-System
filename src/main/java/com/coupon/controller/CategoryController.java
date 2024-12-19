@@ -23,7 +23,7 @@ public class CategoryController {
 
     }
 
-    @GetMapping("/list")
+    @GetMapping("/public/list")
     public List<CategoryDTO> shwoAllCategory() {
         return Cservice.showAllCategory();
     }

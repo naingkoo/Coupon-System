@@ -18,10 +18,11 @@ public class ServiceController {
     @PostMapping("/create")
     public ServiceDTO saveService(@RequestBody ServiceDTO dto){
 
+
         return  Sservice.saveService(dto);
     }
 
-    @GetMapping("/list")
+    @GetMapping("/public/list")
     public List<ServiceDTO> shwoAllService() {
         return Sservice.showAllService();
     }

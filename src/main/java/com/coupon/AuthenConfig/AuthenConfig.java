@@ -39,7 +39,11 @@ public class AuthenConfig {
                 .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class)
                 .sessionManagement(session-> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(auth-> auth
-                        .requestMatchers("/user/loginUser", "/user/addUser").permitAll()
+                        .requestMatchers("/user/loginUser", "/user/addUser",
+                                "/Business/public/**",
+                                "/package/public/**",
+                                "/Service/public/**",
+                                "/Category/public/**").permitAll()
                         .requestMatchers("/user/display").hasRole("ADMIN")
                         .anyRequest().authenticated()
                 )

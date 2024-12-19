@@ -79,7 +79,7 @@ public class PackageController {
     }
 
 
-    @GetMapping("/list")
+    @GetMapping("/public/list")
     public List<PackageDTO> getAll(){
         return packageService.getAllpackage();
     }
