@@ -2,12 +2,9 @@ package com.coupon.entity;
 
 
 import jakarta.persistence.*;
-import lombok.Data;
 import org.springframework.format.annotation.DateTimeFormat;
-
 import java.util.Date;
 
-@Data
 @Entity
 @Table(name="Coupon")
 public class CouponEntity {
@@ -36,4 +33,60 @@ public class CouponEntity {
     @ManyToOne
     @JoinColumn(name = "package_id",nullable = false)
     private PackageEntity packageEntity;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public Date getExpired_date() {
+        return expired_date;
+    }
+
+    public void setExpired_date(Date expired_date) {
+        this.expired_date = expired_date;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    public Boolean getStatus() {
+        return status;
+    }
+
+    public void setStatus(Boolean status) {
+        this.status = status;
+    }
+
+    public Boolean getTransfer_status() {
+        return transfer_status;
+    }
+
+    public void setTransfer_status(Boolean transfer_status) {
+        this.transfer_status = transfer_status;
+    }
+
+    public PurchaseEntity getPurchase() {
+        return purchase;
+    }
+
+    public void setPurchase(PurchaseEntity purchase) {
+        this.purchase = purchase;
+    }
+
+    public PackageEntity getPackageEntity() {
+        return packageEntity;
+    }
+
+    public void setPackageEntity(PackageEntity packageEntity) {
+        this.packageEntity = packageEntity;
+    }
 }

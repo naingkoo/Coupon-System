@@ -1,12 +1,9 @@
 package com.coupon.entity;
 
 import jakarta.persistence.*;
-import lombok.Data;
 import org.springframework.format.annotation.DateTimeFormat;
-
 import java.util.Date;
 
-@Data
 @Entity
 @Table(name="Transfer")
 public class TransferEntity {
@@ -30,5 +27,43 @@ public class TransferEntity {
     @JoinColumn(name = "coupon_id",nullable = false)
     private CouponEntity coupon;
 
+    public Integer getId() {
+        return id;
+    }
 
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public Date getTransfer_date() {
+        return transfer_date;
+    }
+
+    public void setTransfer_date(Date transfer_date) {
+        this.transfer_date = transfer_date;
+    }
+
+    public Boolean getStatus() {
+        return status;
+    }
+
+    public void setStatus(Boolean status) {
+        this.status = status;
+    }
+
+    public UserEntity getUser() {
+        return user;
+    }
+
+    public void setUser(UserEntity user) {
+        this.user = user;
+    }
+
+    public CouponEntity getCoupon() {
+        return coupon;
+    }
+
+    public void setCoupon(CouponEntity coupon) {
+        this.coupon = coupon;
+    }
 }

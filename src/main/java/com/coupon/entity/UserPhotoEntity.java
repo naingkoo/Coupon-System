@@ -1,9 +1,7 @@
 package com.coupon.entity;
 
 import jakarta.persistence.*;
-import lombok.Data;
 
-@Data
 @Entity
 @Table(name = "user_photo")
 public class UserPhotoEntity {
@@ -19,4 +17,28 @@ public class UserPhotoEntity {
     @ManyToOne
     @JoinColumn(name = "user_id",nullable = false)
     private UserEntity user;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public UserEntity getUser() {
+        return user;
+    }
+
+    public void setUser(UserEntity user) {
+        this.user = user;
+    }
 }

@@ -1,10 +1,7 @@
 package com.coupon.entity;
 
-
 import jakarta.persistence.*;
-import lombok.Data;
 
-@Data
 @Entity
 @Table(name="Category")
 public class CategoryEntity {
@@ -13,6 +10,22 @@ public class CategoryEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(name="Category")
+    @Column(name="name")
     private String name;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }

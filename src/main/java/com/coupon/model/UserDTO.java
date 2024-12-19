@@ -2,7 +2,6 @@ package com.coupon.model;
 
 import java.sql.Date;
 
-import lombok.Data;
 import org.springframework.stereotype.Component;
 
 @Component

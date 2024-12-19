@@ -1,12 +1,10 @@
 package com.coupon.entity;
 
 import jakarta.persistence.*;
-import lombok.Data;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import java.util.Date;
 
-@Data
 @Entity
 @Table(name="Package")
 public class PackageEntity {
@@ -15,23 +13,91 @@ public class PackageEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(name="name")
+    @Column(name="name",nullable = false)
     private String name;
 
-    @Column(name="unit_price")
+    @Column(name="unit_price",nullable = false)
     private Double unit_price;
 
-    @Column(name="unit_quantity")
+    @Column(name="quantity",nullable = false)
     private Integer quantity;
 
-    @Column(name="created_date")
-    @DateTimeFormat(pattern = "MM/dd/yyyy")
-    private Date created_date;
+    @Temporal(TemporalType.TIMESTAMP)
+    @Column(name="create_date", nullable = false, updatable = false)
+    private Date create_date;
 
-    @Column(name = "package_photo")
-    private String package_photo;
+
+    @Column(name= "images",nullable = false,columnDefinition = "LONGTEXT")
+    private String image;
+
+    @Column(name="description",nullable = false)
+    private String description;
 
     @ManyToOne
-    @JoinColumn(name = "business_id",nullable = false)
+    @JoinColumn(name = "business_id", nullable = true)
     private BusinessEntity business;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Double getUnit_price() {
+        return unit_price;
+    }
+
+    public void setUnit_price(Double unit_price) {
+        this.unit_price = unit_price;
+    }
+
+    public Integer getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(Integer quantity) {
+        this.quantity = quantity;
+    }
+
+    public Date getCreate_date() {
+        return create_date;
+    }
+
+    public void setCreate_date(Date create_date) {
+        this.create_date = create_date;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public BusinessEntity getBusiness() {
+        return business;
+    }
+
+    public void setBusiness(BusinessEntity business) {
+        this.business = business;
+    }
 }
